@@ -8,6 +8,9 @@
 		"start": "node src/index.ts",
 		"test": "node --test"
 	},
+	"imports": {
+		"#src/*": "./src/*"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",

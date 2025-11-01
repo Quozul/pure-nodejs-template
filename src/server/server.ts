@@ -3,9 +3,9 @@ import {
 	type IncomingMessage,
 	type ServerResponse,
 } from "node:http";
-import { MethodNotAllowed, NotFound } from "./errors.ts";
-import type { Router } from "./router.ts";
-import { write } from "./utils.ts";
+import { MethodNotAllowed, NotFound } from "#src/server/errors.ts";
+import type { Router } from "#src/server/router.ts";
+import { write } from "#src/server/utils.ts";
 
 export class Server {
 	readonly #router: Router;

@@ -3,8 +3,12 @@
 		"noEmit": true,
 		"target": "esnext",
 		"module": "nodenext",
-		"rewriteRelativeImportExtensions": true,
+		"allowImportingTsExtensions": true,
 		"erasableSyntaxOnly": true,
-		"verbatimModuleSyntax": true
+		"verbatimModuleSyntax": true,
+		"baseUrl": ".",
+		"paths": {
+			"#src/*": ["src/*"]
+		}
 	}
 }

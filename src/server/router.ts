@@ -1,7 +1,7 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
-import type { ModelsService } from "../modelsService.ts";
-import { MethodNotAllowed, NotFound } from "./errors.ts";
-import { write } from "./utils.ts";
+import { MethodNotAllowed, NotFound } from "#src/server/errors.ts";
+import { write } from "#src/server/utils.ts";
+import type { ModelsService } from "#src/services/modelsService.ts";
 
 export class Router {
 	readonly #modelService: ModelsService;

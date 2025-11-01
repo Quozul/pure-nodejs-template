@@ -1,9 +1,9 @@
 import assert from "node:assert";
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { mock, test } from "node:test";
-import { Model, type ModelsService } from "../../src/modelsService.ts";
-import { Router } from "../../src/server/router.ts";
-import { Server } from "../../src/server/server.ts";
+import { Router } from "#src/server/router.ts";
+import { Server } from "#src/server/server.ts";
+import { Model, type ModelsService } from "#src/services/modelsService.ts";
 
 function mockRouter(owner: string = "", ...models: string[]) {
 	const modelService = {
