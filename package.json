@@ -5,7 +5,7 @@
 	"main": "src/index.ts",
 	"scripts": {
 		"lint": "pnpm exec biome check",
-		"typecheck": "pnpm exec tsc --noEmit",
+		"type-check": "pnpm exec tsc --noEmit",
 		"start": "node src/index.ts",
 		"test": "node --test",
 		"preinstall": "npx only-allow pnpm"
