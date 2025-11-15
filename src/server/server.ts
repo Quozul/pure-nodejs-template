@@ -28,7 +28,9 @@ export class Server {
 		try {
 			this.#router.handle(req, res);
 		} catch (e) {
-			console.error(`[${req.method}] ${req.url} - ${e.message}\`);`);
+			if (e instanceof Error) {
+				console.error(`[${req.method}] ${req.url} - ${e.message}\`);`);
+			}
 			if (e instanceof NotFound) {
 				this.#notFound(res);
 			} else if (e instanceof MethodNotAllowed) {
